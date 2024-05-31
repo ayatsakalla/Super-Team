@@ -3,126 +3,53 @@
 const teamMembers = [
     {
        name: 'Alisson Becker',
+       img: 'becker.png',
        age: 31,
+       position: 'goalie', 
+       location: 'Goalie', 
        currentTeam: 'Liverpool FC',
-       position: 'goalie',
-       location: 'goalie',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
+       strength: 'Shot-stopping prowess',
+       skills: ['Distribution, Communication, Shot-stopping'],
+       foot: 'Right Footed',
+       biography: "Alisson Becker, the Brazilian goalkeeper renowned for his remarkable shot-stopping abilities, commanding presence in the box, and pivotal role in Liverpool's triumphs on both domestic and international stages."
     } ,
     {
        name: 'Reece James',
-       age: 36,
-       currentTeam: true,
+       img: 'james.png',
+       age: 24,
        position: 'defense',
-       location: 'right back',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
-    }   ,
+       currentTeam: 'Chelsea FC',
+       location: 'Right Defense',
+       strength: 'Tackling',
+       skills: ['Pinpoint Crosses, Dribbling, Versatility'],
+       foot: 'Right Footed',
+       biography: "Reece James, a versatile and formidable right-back known for his defensive solidity, attacking flair, and contributions to Chelsea's successes"
+    } , 
     {
-       name: 'Lamine Yamal',
+       name: 'Virgil Van Dijk',
+       img: 'virgil.webp',
        age: 36,
-       currentTeam: true,
        position: 'defense',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
+       currentTeam: 'Liverpool FC',
+       location: 'Left Center Defense',
+       strength: 'Aerial Dominance',
+       skills: ['Headers, Passing, Composure'],
+       foot: 'Right Footed',
+       biography: "Virgil van Dijk, the Dutch defensive maestro, rose to prominence as one of the world's best center-backs, leading Liverpool to unprecedented defensive stability and glory in both domestic and European competitions."
     } , 
     {
-       name: 'Enzo Fernandez',
-       age: 36,
-       currentTeam: true,
+       name: 'Ibrahima Konate',
+       img: 'konate.webp',
+       age: 25,
        position: 'defense',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
-    }  , 
-    {
-       name: 'Virgil Van Dyke',
-       age: 36,
-       currentTeam: true,
-       position: 'defense',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
-    } , 
-    {
-       name: 'Mohamed Salah',
-       age: 36,
-       currentTeam: true,
-       position: 'midfield',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
-    } , 
-    {
-       name: 'Kevin De Bruyne',
-       age: 36,
-       currentTeam: true,
-       position: 'midfield',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
-    } , 
-    {
-       name: 'Roberto Firmino',
-       age: 36,
-       currentTeam: true,
-       position: 'midfield',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
-    } , 
-    {
-       name: 'Alisson Becker',
-       age: 36,
-       currentTeam: true,
-       position: 'forward',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
-    } , 
-    {
-       name: 'Alisson Becker',
-       age: 36,
-       currentTeam: true,
-       position: 'forward',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
-    } , 
-    {
-       name: 'Alisson Becker',
-       age: 36,
-       currentTeam: true,
-       position: 'forward',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
-    } ,
-    {
-        name: 'Alisson Becker',
-       age: 36,
-       currentTeam: true,
-       position: 'manager',
-       strengths: 'Ball Control',
-       skills: ['Dribbling', 'Finishing', 'Playmaking'],
-       foot: 'Left Footed',
-       biography: 'Messi oh where do I begin ever since Ive seen you cut in on that magical left foot I knew you were my king. The way you gracefully fry your defenders and leave them in the dust with your excellent ball control and vision of the game. You revolutionized the game and are truly the best of all time. My King. The man who shook hands with paradise. The little boy from Rosario. Leo Messi <33'
+       currentTeam: 'Liverpool FC',
+       location: 'Right Center Defense',
+       strength: 'Physicality',
+       skills: ['Tackling, Intercepts Passes, Positional Awareness'],
+       foot: 'Right Footed',
+       biography: "Ibrahim Konaté, the promising French center-back, has earned recognition for his commanding performances at the back and his potential to become a defensive stalwart for both club and country."
     }
+
    ]
    
    function generateTeamCards() {
@@ -162,13 +89,23 @@ const teamMembers = [
    
    
            card.innerHTML = `
-        <div class="card m-3">
+        <div class="card">
             <div class = "card-header text-black text-center">
-                ${member.name}
+                <img class="img-fluid" src="${member.img}"></img>
+                <h4>${member.name}</h4>
             </div>
-            <div class = "card-body text-white text-center" style = "background-color:${backgroundColor};">
-                <p><strong>Position:</strong> ${member.location}</p>
-                <p><strong>Age:</strong> ${member.age}</p>
+            <div class = "card-body text-center" style = "background-color:${backgroundColor};">
+                <p><strong>Position</strong> <br> ${member.location}</p>
+                <p><strong>Age</strong> <br> ${member.age}</p>
+                <p><strong>Current Team</strong> <br> ${member.currentTeam}</p>
+                <p><strong>Dominant Foot</strong> <br> ${member.foot}</p>
+                <p><strong>Strength</strong> <br> ${member.strength}</p>
+                <p><strong>Skills</strong> <br> ${member.skills}</p>
+                <p><strong>Dominant Foot</strong> <br> ${member.foot}</p>
+                <p>${member.biography}</p>
+
+
+
             </div>
         </div>
         `
