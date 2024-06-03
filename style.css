@@ -3,3 +3,13 @@ html, body {
     height: 100%;
     background-color: black;
 }
+
+/* fonts */
+@font-face {
+    font-family: 'wesker';
+    src: url('WeskerBoldsemiexpanded-YqXgO.otf');
+}
+
+.wesker {
+    font-family: 'wesker';
+}

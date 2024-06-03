@@ -26,6 +26,18 @@ const teamMembers = [
        biography: "Reece James, a versatile and formidable right-back known for his defensive solidity, attacking flair, and contributions to Chelsea's successes"
     } , 
     {
+       name: 'Ibrahima Konate',
+       img: 'konate.png',
+       age: 25,
+       position: 'defense',
+       currentTeam: 'Liverpool FC',
+       location: 'Right Center Defense',
+       strength: 'Physicality',
+       skills: ['Tackling, Intercepts Passes, Positional Awareness'],
+       foot: 'Right Footed',
+       biography: "Ibrahim Konaté, the promising French center-back, has earned recognition for his commanding performances at the back and his potential to become a defensive stalwart for both club and country."
+    } ,
+    {
        name: 'Virgil Van Dijk',
        img: 'virgil.webp',
        age: 36,
@@ -36,20 +48,7 @@ const teamMembers = [
        skills: ['Headers, Passing, Composure'],
        foot: 'Right Footed',
        biography: "Virgil van Dijk, the Dutch defensive maestro, rose to prominence as one of the world's best center-backs, leading Liverpool to unprecedented defensive stability and glory in both domestic and European competitions."
-    } , 
-    {
-       name: 'Ibrahima Konate',
-       img: 'konate.webp',
-       age: 25,
-       position: 'defense',
-       currentTeam: 'Liverpool FC',
-       location: 'Right Center Defense',
-       strength: 'Physicality',
-       skills: ['Tackling, Intercepts Passes, Positional Awareness'],
-       foot: 'Right Footed',
-       biography: "Ibrahim Konaté, the promising French center-back, has earned recognition for his commanding performances at the back and his potential to become a defensive stalwart for both club and country."
     }
-
    ]
    
    function generateTeamCards() {
@@ -63,27 +62,19 @@ const teamMembers = [
    
            const card = document.createElement('div')
    
-           card.classList.add('col-md-3')
+           card.classList.add('col-3')
    
            //style BG color of card on position
            let backgroundColor = ''
    
-           switch(member.position.toLowerCase()) {
-               case 'forward': 
+           switch(member.currentTeam) {
+               case 'Liverpool FC': 
                    backgroundColor = 'red'
                    break
-               case 'midfield': 
-                   backgroundColor = 'green'
-                   break
-               case 'defense': 
+               case 'Chelsea FC': 
                    backgroundColor = 'blue'
                    break
-               case 'manager': 
-                   backgroundColor = 'grey'
-                   break
-                case 'goalie':
-                    backgroundColor = 'pink'
-                    break
+    
            }
 
    
@@ -94,7 +85,7 @@ const teamMembers = [
                 <img class="img-fluid" src="${member.img}"></img>
                 <h4>${member.name}</h4>
             </div>
-            <div class = "card-body text-center" style = "background-color:${backgroundColor};">
+            <div class = "card-body text-center text-white wesker" style = "background-color:${backgroundColor};">
                 <p><strong>Position</strong> <br> ${member.location}</p>
                 <p><strong>Age</strong> <br> ${member.age}</p>
                 <p><strong>Current Team</strong> <br> ${member.currentTeam}</p>
