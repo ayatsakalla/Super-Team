@@ -1,15 +1,15 @@
 html, body {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color:#1a2421;
 }
 
 /* fonts */
 @font-face {
-    font-family: 'wesker';
-    src: url('WeskerBoldsemiexpanded-YqXgO.otf');
+    font-family: 'caramel';
+    src: url('QueensidesMedium-x30zV.ttf');
 }
 
-.wesker {
-    font-family: 'wesker';
+.caramel {
+    font-family: 'caramel';
 }
